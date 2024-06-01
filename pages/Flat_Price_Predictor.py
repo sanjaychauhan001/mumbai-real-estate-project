@@ -5,8 +5,9 @@ import numpy as np
 
 pipe = pickle.load(open('pipeline.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
-
-st.header("Welcome to Mumbai Flat Price Predictor")
+st.set_page_config(page_title='price predictor')
+st.title("Mumbai Flat Price Predictor")
+st.warning("Prices are in Cr")
 
 selected_bhk = st.selectbox("Select BHK",sorted(df['flat_type'].unique()))
 selected_location = st.selectbox("Select Location",sorted(df['location1'].unique()))
