@@ -4,7 +4,7 @@ seaborn
 matplotlib
 plotly
 bs4
-BeautifulSoup
+beautifulsoup4
 selenium
 sklearn
 streamlit
