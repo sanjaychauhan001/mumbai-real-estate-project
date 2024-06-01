@@ -9,3 +9,6 @@ BeautifulSoup
 selenium
 sklearn
 streamlit
+scipy
+requests
+time
