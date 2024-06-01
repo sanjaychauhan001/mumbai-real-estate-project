@@ -6,7 +6,7 @@ plotly
 bs4
 beautifulsoup4
 selenium
-sklearn
+scikit-learn
 streamlit
 scipy
 requests
