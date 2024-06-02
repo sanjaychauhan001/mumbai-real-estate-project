@@ -1,4 +1,4 @@
-flat_type,flat_price,location1,buildupArea_sqft,avg_price_thousands,age_of_propert,floor_type,furnishing,bedrooms,bathrooms,balcony,parking
+flat_type,flat_price,location1,buildupArea_sqft,avg_price_per_sqft,age_of_propert,floor_type,furnishing,bedrooms,bathrooms,balcony,parking
 3 BHK Flat,3.95,Kanjurmarg West,1550,25480.0,recent construction,Higher,Fully Furnished,3,2,1,yes
 1 BHK Flat,0.19,Palghar,630,3020.0,recent construction,Middle,Unfurnished,1,1,2,yes
 1 BHK Flat,0.73,Mira Road East,580,12590.0,new construction,Lower,Semi Furnished,1,2,2,no
