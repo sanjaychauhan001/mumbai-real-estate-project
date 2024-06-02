@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-data = pd.read_csv("data\\mumbai_flats_cleaned_v4.csv")
+data = pd.read_csv("data/mumbai_flats_cleaned_v4.csv")
 data.drop(columns=['floor_type'],inplace=True)
 data.drop_duplicates(inplace=True)
 st.set_page_config(page_title='Recommendation section')
