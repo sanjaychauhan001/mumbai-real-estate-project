@@ -13,4 +13,3 @@ st.write("5. Detected the outliers using Box plot, histogram and IQR method. to 
 st.write("6. Applied different different algorithm and got best result on SVR then applied the grid searchSV to get the best parametrs.")
 st.write("7. divided this project into three section Analysis section, flat price prediction and flat recommendation based on user input.")
 
-st.warning("Price is in Cr")
