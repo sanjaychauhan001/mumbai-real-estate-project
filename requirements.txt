@@ -3,9 +3,11 @@ numpy
 seaborn 
 matplotlib
 plotly
-pickle
 bs4
-BeautifulSoup
+beautifulsoup4
 selenium
-sklearn
+scikit-learn
 streamlit
+scipy
+requests
+

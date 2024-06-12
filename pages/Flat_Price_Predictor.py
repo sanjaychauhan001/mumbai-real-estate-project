@@ -11,13 +11,13 @@ st.warning("Prices are in Cr")
 
 selected_bhk = st.selectbox("Select BHK",sorted(df['flat_type'].unique()))
 selected_location = st.selectbox("Select Location",sorted(df['location1'].unique()))
-buildup_area = st.number_input("Enter Builup Area (SQFT)")
+buildup_area = st.number_input("Enter Buildup Area (SQFT)")
 age_property = st.selectbox("Age of property",["0-2","3-10","11-20","21-50","Greater than 50"])
 furnishing = st.selectbox("Select Furnishing Type",sorted(df['furnishing'].unique()))
 bedrooms = st.selectbox("Select Number of Bedrooms",sorted(df['bedrooms'].unique()))
 bathrooms = st.selectbox("Select Number of Bathrooms",sorted(df['bathrooms'].unique()))
 balcony = st.selectbox("Select Number of Balcony",sorted(df['balcony'].unique()))
-parking = st.selectbox("Want Parking",sorted(df['parking'].unique()))
+parking = st.selectbox("Parking",sorted(df['parking'].unique()))
 
 btn = st.button("Submit")
 
