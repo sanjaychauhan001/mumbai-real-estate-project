@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("**About Project**")
 st.image("mumbai_img.jpg",width=500,caption='Mumbai')
-st.header("This project is build on mumbai's 7500 flats dataset.")
+st.header("This project is build on mumbai's 8500 flats dataset.")
 
 st.write("1. The data was scraped from the housing.com using selenium and BeautifulSoup.")
 st.write("2. The data cleaning was done in jupyter notebook using pandas and numpy.")

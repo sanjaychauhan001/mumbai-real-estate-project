@@ -34,8 +34,8 @@ flat_type.insert(0,None)
 selected_location = st.selectbox("Select Location",locations)
 selected_bhk = st.selectbox("Select BHK",flat_type)
 
-minimum_price = st.number_input("Enter Your Minimum Budget in Cr(45 laks then 0.40)",value=0.3)
-maximum_price = st.number_input("Enter Your Maximum Budget in Cr(45 laks then 0.40)",value=1.0)
+minimum_price = st.number_input("Enter Your Minimum Budget in Cr(45 lakhs then 0.45)",value=0.3)
+maximum_price = st.number_input("Enter Your Maximum Budget in Cr(45 lakhs then 0.45)",value=1.0)
 
 
 top = st.slider("Number of Recommendations", 3, 5,10)
