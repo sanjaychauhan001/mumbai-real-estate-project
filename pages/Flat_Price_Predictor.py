@@ -19,12 +19,32 @@ balcony = st.selectbox("Select Number of Balcony",sorted(df['balcony'].unique())
 
 
 btn = st.button("Submit")
-if which_floor == "lower(<20)":
-    which_floor = "lower"
-elif which_floor == "middle(20-50)":
-    which_floor = "middle"
+if selected_bhk == "1 BHK Flat":
+    selected_bhk = 1
+elif selected_bhk == "2 BHK Flat":
+    selected_bhk = 2
+elif selected_bhk == "3 BHK Flat":
+    selected_bhk = 3
+elif selected_bhk == "4 BHK Flat":
+    selected_bhk = 4
+elif selected_bhk == "5 BHK Flat":
+    selected_bhk = 5
+elif selected_bhk == "6 BHK Flat":
+    selected_bhk = 6
+
+if furnishing == "Unfurnished":
+    furnishing = 0
+elif furnishing == "Semi Furnished":
+    furnishing = 1
 else:
-    which_floor = which_floor
+    furnishing = 2
+
+if which_floor == "lower(<20)":
+    which_floor = 0
+elif which_floor == "middle(20-50)":
+    which_floor = 1
+else:
+    which_floor = 2
 
 if btn:
     input = [selected_bhk,selected_location,buildup_area,which_floor,furnishing,bedrooms,balcony]
