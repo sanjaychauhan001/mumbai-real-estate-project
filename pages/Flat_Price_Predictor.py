@@ -5,6 +5,7 @@ import numpy as np
 
 pipe = pickle.load(open('pipeline.pkl','rb'))
 df = pickle.load(open('X.pkl','rb'))
+df = df.drop(columns=['bedrooms'])
 st.set_page_config(page_title='price predictor')
 st.title("Mumbai Flat Price Predictor")
 st.warning("Prices are in Cr")
@@ -14,7 +15,6 @@ selected_location = st.selectbox("Select Location",sorted(df['address'].unique()
 buildup_area = st.number_input("Enter Buildup Area (SQFT)")
 which_floor = st.selectbox("Which floor",["lower(<20)","middle(20-50)","higher"])
 furnishing = st.selectbox("Select Furnishing Type",sorted(df['furnishing'].unique()))
-bedrooms = st.selectbox("Select Number of Bedrooms",sorted(df['bedrooms'].unique()))
 balcony = st.selectbox("Select Number of Balcony",sorted(df['balcony'].unique()))
 
 
@@ -47,7 +47,7 @@ else:
     which_floor = 2
 
 if btn:
-    input = [selected_bhk,selected_location,buildup_area,which_floor,furnishing,bedrooms,balcony]
+    input = [selected_bhk,selected_location,buildup_area,which_floor,furnishing,balcony]
     new_df = pd.DataFrame([input],columns=df.columns)
     lower = round(np.expm1(pipe.predict(new_df)[0]) - np.expm1(pipe.predict(new_df)[0])*0.05,2)
     upper = round(np.expm1(pipe.predict(new_df)[0]) + np.expm1(pipe.predict(new_df)[0])*0.05,2)
